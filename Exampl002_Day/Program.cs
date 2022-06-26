@@ -1,6 +1,10 @@
 ﻿System.Console.Write("Введите значение дня недели: ");
-int day = 9;
-System.Console.WriteLine(day);
+int day = Convert.ToInt32(Console.ReadLine()); // преобразует строковый тип в числовой
+
+//int day = 5;                                                          
+//System.Console.WriteLine(day);
+
+System.Console.Write("День недели: ");
 
 if (day == 1)
 {
