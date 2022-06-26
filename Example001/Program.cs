@@ -1,5 +1,5 @@
-﻿int a = 6;
-int b = 25;
+﻿int a = 6;                            // int number = 7
+int b = 25;                           // Console.WriteLine(number * number); 
 
 if (a * a == b)
 {
@@ -9,3 +9,5 @@ else
 {
     Console.WriteLine("No");
 }
+
+// 
