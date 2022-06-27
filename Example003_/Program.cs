@@ -1,6 +1,6 @@
 ﻿Console.Write("Введите трехзначное число: ");
 
-string str = Console.ReadLine(); // ввод строкового типа данных
+// string str = Console.ReadLine(); // ввод строкового типа данных
 
 // *int number = int.Parse(str);* // принять (Parse) строковый в числовой тип
 
@@ -10,15 +10,22 @@ string str = Console.ReadLine(); // ввод строкового типа да�
 // Если с цифрами будут вводиться буквы, то выдаст else
 
 int number;
-if (int.TryParse(str, out number))
+// if (int.TryParse(str, out number))
+// if (int.TryParse(Console.ReadLine(), out number))
+//{
+//    System.Console.WriteLine("Удалось");
+//}
+//else
+//{
+ //   System.Console.WriteLine("Не удалось");
+//}
+
+while (!int.TryParse(Console.ReadLine(), out number)) // до тех пор пока не исполниться парсер
 {
-    System.Console.WriteLine("Удалось");
+    System.Console.Write("Введите корректное значение!");
 }
-else
-{
-    System.Console.WriteLine("Не удалось");
-}
-System.Console.WriteLine(number);
+
+//System.Console.WriteLine(number);
 
 //int number = Convert.ToInt32(Console.ReadLine());
 //int number = 1556;
